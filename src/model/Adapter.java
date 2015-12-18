@@ -5,14 +5,14 @@ import java.util.ArrayList;
 public class Adapter extends Adaptee implements Target
 {  
 	  
-	 public void printList(ArrayList<String> list) {  
+	 public void printList(ArrayList<Person> list) {  
 	   
 	  //Converting ArrayList<String> to String so that we can pass String to  
 	  // adaptee class  
 	  String str = "";  
-	  for (String s : list)  
+	  for (Person p : list)  
 	  {  
-	      str += s + "\t";  
+	      str += p.toString() + "\n";  
 	  }  
 	    
 	  // instantiating adaptee class  

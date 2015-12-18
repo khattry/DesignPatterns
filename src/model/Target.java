@@ -4,5 +4,5 @@ import java.util.ArrayList;
 
 public interface Target
 {
-	public void printList(ArrayList<String> list);
+	public void printList(ArrayList<Person> list);
 }
