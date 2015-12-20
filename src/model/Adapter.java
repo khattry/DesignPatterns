@@ -2,13 +2,11 @@ package model;
 
 import java.util.ArrayList;
 
-public class Adapter extends Adaptee implements Target
-{  
+public class Adapter  extends Adaptee implements Target
+{   
 	  
 	 public void printList(ArrayList<Person> list) {  
 	   
-	  //Converting ArrayList<String> to String so that we can pass String to  
-	  // adaptee class  
 	  String str = "";  
 	  for (Person p : list)  
 	  {  
@@ -16,9 +14,9 @@ public class Adapter extends Adaptee implements Target
 	  }  
 	    
 	  // instantiating adaptee class  
-//	  PrintString ps=new PrintString();  
-	  //ps.print(listString);  
-	  super.print(str);
+		//Adaptee ad=new Adaptee();  
+		//ad.print(str);  
+	 super.print(str);
 	 }  
 	}  
 
