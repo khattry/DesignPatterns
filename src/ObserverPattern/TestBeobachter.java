@@ -8,7 +8,7 @@ package ObserverPattern;
  */
 public class TestBeobachter
 {
-	public static void main(String[] args)
+	public static void main(String[] args) throws CloneNotSupportedException
 	{
 		Newsletter newsletter = new Newsletter();
 		
@@ -24,9 +24,10 @@ public class TestBeobachter
 		newsletter.abmelden(abo1);
 		System.out.println(abo1.getName()+" ist abgemeldet");
 		newsletter.aendereNachricht("Neuigkeit 2");
-//
+
 		newsletter.abmelden(abo2);
 		System.out.println(abo2.getName()+" ist abgemeldet");
 		newsletter.aendereNachricht("Neuigkeit 3");
+		
 	}
 }

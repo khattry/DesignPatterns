@@ -5,6 +5,8 @@ import java.util.List;
 
 /**
  * Die Klasse Newsletter stellt eine Implementierung des Interface IBeobachtbar
+ * 
+ * @author khattry
  */
 
 public class Newsletter implements IBeobachtbar
@@ -16,7 +18,7 @@ public class Newsletter implements IBeobachtbar
 	{
 		abonnenten = new ArrayList<IBeobachter>();
 	}
-
+	
 	public void anmelden(IBeobachter beobachter)
 	{
 		abonnenten.add(beobachter);
@@ -32,9 +34,9 @@ public class Newsletter implements IBeobachtbar
 	public void aendereNachricht(String neueNachricht)
 	{
 		this.nachricht = neueNachricht;
-		benachrichtigen();
+		benachrichtigeAlle();
 	}
-	private void benachrichtigen()
+	private void benachrichtigeAlle()
 	{
 		for (IBeobachter beobachter : abonnenten)
 		{

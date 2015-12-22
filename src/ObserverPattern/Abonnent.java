@@ -15,7 +15,8 @@ public class Abonnent implements IBeobachter
 
 	public void aktualisieren(IBeobachtbar beobachtbar)
 	{
-		System.out.println("Neue Nachricht fuer " + name +" : "+beobachtbar.gibZustand());
+		String zustand=beobachtbar.gibZustand();
+		System.out.println("Neue Nachricht fuer " + name +" : "+zustand);
 	}
 	public String getName()
 	{
